@@ -28,7 +28,7 @@ export const sendEmail = async (
 
   const { error: resendError } = await resend.emails.send({
     from: "EnterTab-SLP <onboarding@resend.dev>",
-    to: ["dragonghost9999@gmail.com"],
+    to: [process.env.RESEND_EMAIL_TO!],
     subject: "New Message",
     react: await EmailTemplate(validatedData),
   });
