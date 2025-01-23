@@ -60,7 +60,7 @@ const HeaderSection = () => {
             </Button>
             <Button variant="outline" size="lg" asChild>
               <a href="https://www.entertab.net/en">
-                Learn more <ArrowBigUpDash className="ml-2 h-4 w-4" />
+                More About Us <ArrowBigUpDash className="ml-2 h-4 w-4" />
               </a>
             </Button>
           </div>
