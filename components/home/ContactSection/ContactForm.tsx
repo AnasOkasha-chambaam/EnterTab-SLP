@@ -68,7 +68,7 @@ const ContactForm = () => {
       richColors: true,
     });
     form.reset();
-  }, [sendEmailState]);
+  }, [sendEmailState, form]);
 
   return (
     <Form {...form}>

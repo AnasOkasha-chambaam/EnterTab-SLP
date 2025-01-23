@@ -16,8 +16,8 @@ export const ZContactForm = z.object({
   }),
   message: z
     .string()
-    .min(10, {
-      message: "Message must be at least 10 characters long",
+    .min(2, {
+      message: "Message must be at least 2 characters long",
     })
     .max(MESSAGE_MAX_LENGTH, {
       message: "Message must be less than 500 characters long",
