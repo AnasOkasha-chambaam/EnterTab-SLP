@@ -17,7 +17,7 @@ This is a simple landing page for EnterTab, built with Next.js, React, and Tailw
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/entertab-slp.git
+   git clone https://github.com/AnasOkasha-chambaam/entertab-slp.git
    cd entertab-slp
    ```
 

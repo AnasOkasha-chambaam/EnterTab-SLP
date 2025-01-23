@@ -67,7 +67,7 @@ const ContactForm = () => {
     toast.success(sendEmailState.message, {
       richColors: true,
     });
-    //   form.reset();
+    form.reset();
   }, [sendEmailState]);
 
   return (
@@ -78,7 +78,7 @@ const ContactForm = () => {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Username</FormLabel>
+              <FormLabel>Name</FormLabel>
               <FormControl>
                 <Input
                   placeholder="Your Name"
