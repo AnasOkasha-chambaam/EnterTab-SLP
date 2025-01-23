@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/sheet";
 import {
   ArrowBigUpDashIcon,
+  Code2Icon,
   CodeIcon,
   ExternalLinkIcon,
   MenuIcon,
@@ -44,7 +45,7 @@ const data = {
     {
       title: "Works",
       url: "#",
-      icon: ExternalLinkIcon,
+      icon: Code2Icon,
       items: [
         {
           title: "Saudi Arabian Cultural Mission",
@@ -61,6 +62,7 @@ const data = {
         {
           title: "View all works",
           url: "https://www.entertab.net/en/portfolio/index",
+          icon: ExternalLinkIcon,
           isButton: true,
         },
       ],

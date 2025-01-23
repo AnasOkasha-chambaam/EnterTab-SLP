@@ -116,7 +116,7 @@ body {
 }
 
 @layer utilities {
-  @media (max-height: 768px) {
+  @media (max-height: 610px) and (max-width: 768px) {
     .max-y-md-hidden {
       @apply !hidden;
     }

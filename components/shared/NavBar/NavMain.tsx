@@ -32,6 +32,7 @@ export function NavMain({
     items?: {
       title: string;
       url: string;
+      icon?: LucideIcon;
       isButton?: boolean;
       isPrimary?: boolean;
     }[];
@@ -47,11 +48,13 @@ export function NavMain({
             item.isButton ? (
               <SidebarMenuItem key={item.title}>
                 <SidebarMenuButton asChild>
-                  <Button className="mt-3">
-                    <>
-                      {item.icon && <item.icon />}
-                      <span>{item.title}</span>
-                    </>
+                  <Button className="mt-3" asChild>
+                    <a href={item.url} className="flex items-center">
+                      <>
+                        {item.icon && <item.icon />}
+                        <span>{item.title}</span>
+                      </>
+                    </a>
                   </Button>
                 </SidebarMenuButton>
               </SidebarMenuItem>
@@ -79,8 +82,19 @@ export function NavMain({
                               <Button
                                 variant={"outline"}
                                 className="mt-3 w-full"
+                                asChild
                               >
-                                <span>{subItem.title}</span>
+                                <a
+                                  href={subItem.url}
+                                  className="flex items-center `"
+                                >
+                                  <>
+                                    {subItem.icon && (
+                                      <subItem.icon className="mr-2" />
+                                    )}
+                                    <span>{subItem.title}</span>
+                                  </>
+                                </a>
                               </Button>
                             </SidebarMenuSubButton>
                           </SidebarMenuSubItem>
